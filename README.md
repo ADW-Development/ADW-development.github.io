@@ -1,3 +1,3 @@
-# ADW-development.github.io
+# The ADW website
 [website](https://ADW-development.github.io)
 
