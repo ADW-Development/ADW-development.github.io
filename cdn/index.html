@@ -1,21 +1,12 @@
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-      const requestUrl = window.location.href;
-      const currentTime = new Date().toLocaleString();
-  
-      const displayDiv = document.createElement("div");
-      displayDiv.style.position = "fixed";
-      displayDiv.style.bottom = "10px";
-      displayDiv.style.right = "10px";
-      displayDiv.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-      displayDiv.style.color = "white";
-      displayDiv.style.padding = "10px";
-      displayDiv.style.borderRadius = "5px";
-      displayDiv.style.fontFamily = "Arial, sans-serif";
-  
-      displayDiv.innerHTML = `<strong>request url </strong> ${requestUrl} <br>
-                              <strong>request time </strong> ${currentTime}`;
-  
-      document.body.appendChild(displayDiv);
-  });
+document.addEventListener("DOMContentLoaded", function () {
+    const requestUrl = window.location.href;
+    const currentTime = new Date().toLocaleString();
+
+    const displayDiv = document.createElement("div");
+
+    displayDiv.innerText = `request URL: ${requestUrl} \ntime: ${currentTime}`;
+
+    document.body.appendChild(displayDiv);
+});
 </script>
