@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <script>
+      // Basic bot check using JavaScript execution
+      const isHeadless = navigator.webdriver || !navigator.userAgent || /bot|crawl|spider|headless/i.test(navigator.userAgent);
+      if (isHeadless) {
+        document.write('Access denied. Bots are not allowed.');
+      }
+    </script>
   <a href="index.html"><img style="margin-top: 1.5vh;" src="https://raw.githubusercontent.com/ADW-Development/ADW-development.github.io/refs/heads/main/Favicon.png" alt="ADW logo"></a>
   <ul style="margin-top: 0.5vh;">
   <ul style="margin-top: 0.5vh;">
