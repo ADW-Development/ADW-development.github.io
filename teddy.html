@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://ADW-development.github.io/Favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fefefe;
+        }
+
+        #teddy {
+            width: 200px;
+            height: auto;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .squished {
+            transform: scaleY(0.6) scaleX(1.2);
+        }
+    </style>
+</head>
+<body>
+    <img id="teddy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Teddy_bear_with_heart.png/480px-Teddy_bear_with_heart.png" alt="Teddy Bear">
+
+    <script>
+        const teddy = document.getElementById('teddy');
+
+        teddy.addEventListener('click', () => {
+            teddy.classList.add('squished');
+            setTimeout(() => {
+                teddy.classList.remove('squished');
+            }, 200);
+        });
+    </script>
+</body>
+</html>
